@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    localStorage.setItem('userRoles', ['ROLE_ADMIN']);
+    localStorage.setItem('userRoles', ['ROLE_MANAGER']);
   }, []);
   return (
     <div className='App'>
@@ -30,7 +30,7 @@ function App() {
             exact
             path='/manager'
             component={ManagerPage}
-            roles={['ROLE_Manager']}
+            roles={['ROLE_MANAGER']}
           />
         </Switch>
       </Router>
